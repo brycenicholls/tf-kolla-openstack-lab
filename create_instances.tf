@@ -11,7 +11,7 @@ resource "openstack_compute_instance_v2" "kolla" {
   network {
     name = "PROV"
 }
-#  user_data = "${file("webserver.sh")}"
+  user_data = "${file("kolla.sh")}"
 }
 
 # Create computes
